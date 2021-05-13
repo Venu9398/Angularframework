@@ -1,6 +1,6 @@
-<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-5 mb-5">
-     <div class="col"*ngFor="let p of products">
-        <app-productdetails ></app-productdetails>
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mt-5 mb-5 ">
+     <div class="col"*ngFor="let probj of products">
+        <app-productdetails [productsobj]=probj></app-productdetails>
      </div>
 </div>
 
