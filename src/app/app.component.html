@@ -1,25 +1,25 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
+<nav class="navbar navbar-expand-lg navbar-light bg-light p-2">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><i class="fas fa-motorcycle"></i>   Bikesgo</a>
+      <a class="navbar-brand " href="#"><img src="https://www.ktm.com/content/dam/websites/ktm-com/language-masters/en/logo/37860_KTM_LogoPodium_orange_RGB.jpg" width="150px" alt="this image may be deleted">  Bikesgo</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
           <li class="nav-item">
-            <a class="nav-link  text-dark " routerLink="home" routerLinkActive="active">Home</a>
+           <h3> <a class="nav-link  text-dark " routerLink="home" routerLinkActive="active">Home</a></h3>
           </li>
           <li class="nav-item">
-            <a class="nav-link  text-dark " routerLink="login" routerLinkActive="active">Login</a>
+            <h3><a class="nav-link  text-dark " routerLink="login" routerLinkActive="active">Login</a></h3>
           </li>
           <li class="nav-item">
-            <a class="nav-link  text-dark " routerLink="register" routerLinkActive="active">Register</a>
+            <h3><a class="nav-link  text-dark " routerLink="register" routerLinkActive="active">Register</a></h3>
           </li>
           <li class="nav-item">
-            <a class="nav-link  text-dark " routerLink="Products" routerLinkActive="active">products</a>
+            <h3> <a class="nav-link  text-dark " routerLink="Products" routerLinkActive="active">products</a></h3>
           </li>
           <li class="nav-item">
-            <a class="nav-link  text-dark" routerLink="contactus" routerLinkActive="active">contactus</a>
+            <h3><a class="nav-link  text-dark" routerLink="contactus" routerLinkActive="active">contactus</a></h3>
           </li>
         </ul>
       </div>
@@ -27,8 +27,9 @@
   </nav>
   
 <!-- products component -->
-<div class="bg-primary">
-<router-outlet></router-outlet>
-</div>
 
-  <app-footer class="mt-0px " ></app-footer>
+<router-outlet ></router-outlet>
+
+
+<!-- footer -->
+  <app-footer class="position-relative top-100 start-0 "></app-footer>

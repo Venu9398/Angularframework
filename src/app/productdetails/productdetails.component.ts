@@ -7,6 +7,7 @@ import { Products } from '../models/product.module'
 })
 export class ProductdetailsComponent  {
 
-  @Input() productsobj:Products;
+  @Input() productsobj:Products[]=[]
+
 
 }

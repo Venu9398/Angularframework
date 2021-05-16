@@ -14,3 +14,10 @@ nav li a{
 nav li a:focus{
     color:yellow;
 }
+.background{
+    background-color:white;
+}
+.navbar-brand{
+    color:orangered;
+    font-size: 50px;
+} 
