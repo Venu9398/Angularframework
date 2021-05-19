@@ -6,7 +6,6 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { MotocrossComponent } from './motocross/motocross.component';
 import { MotogpComponent } from './motogp/motogp.component';
-import { ProductdetailsComponent } from './productdetails/productdetails.component';
 import { ProductsComponent } from './products/products.component';
 import { RallyComponent } from './rally/rally.component';
 import { RegisterComponent } from './register/register.component';
@@ -23,7 +22,7 @@ const routes: Routes = [
   ]
 },
   {path:"contactus",component:ContactusComponent},
-  {path:'',redirectTo:'/Home',pathMatch:'full'}
+  { path:'', redirectTo:'/home',pathMatch:'full'},
 ];
 
 @NgModule({

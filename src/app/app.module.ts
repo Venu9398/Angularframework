@@ -14,7 +14,6 @@ import { MotogpComponent } from './motogp/motogp.component';
 import { MotocrossComponent } from './motocross/motocross.component';
 import { RallyComponent } from './rally/rally.component';
 import { BikesComponent } from './bikes/bikes.component';
-import { MotocrossdetailsComponent } from './motocrossdetails/motocrossdetails.component';
 
 @NgModule({
   declarations: [
@@ -29,8 +28,7 @@ import { MotocrossdetailsComponent } from './motocrossdetails/motocrossdetails.c
     MotogpComponent,
     MotocrossComponent,
     RallyComponent,
-    BikesComponent,
-    MotocrossdetailsComponent,
+    BikesComponent
     
   ],
   imports: [
