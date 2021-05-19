@@ -1,12 +1,20 @@
-
-<div class="card h-100 shadow" >
+<div class="card h-100 shadow text-center">
+  <img src={{productObj.productImage}} class="card-img-top  " height="300px" alt="...">
+  <div class="card-body">
+    <h5 class="card-title" style="color: #173e9c;">{{productObj.productTitle}}</h5>
+    <p class="card-text">{{productObj.description}}</p>
+    <button href="#" class="btn add-product" (click)="sendProductDetailsToParent(productObj.productTitle)">Add product</button>
+  </div>
+</div>
+<!-- <div class="card h-100 shadow" >
     <img src={{productsobj.productImage}} class="card-img-top w-100%" alt="...">
     <div class="card-body">
       <h5 class="card-title text-center" style=" color:#7bb3ff ">{{productsobj.productTitle}} </h5>
       <p class="card-text">{{productsobj.description}} </p>
       <a href="#" class="btn btn-primary">For more details</a>
     </div>
-  </div>
+   
+  </div> -->
 
   <!-- <h1 class="text-center display-5 p-5 title "><b>Racing motorbikes</b> </h1> 
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mb-5 ">

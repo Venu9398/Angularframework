@@ -1,1 +1,11 @@
-<p>rally works!</p>
+<div class="row mb-5 mt-5">
+    <div class="col-sm-6" *ngFor="let rallyobj of rally">
+      <div class="card">
+        <div class="card-body">
+          <p class="card-title"><img src="{{rallyobj.productImage}}" width=100% alt=""></p>
+          <h1 class="card-text">{{rallyobj.productTitle}} </h1>
+          <a href="#" class="btn btn-primary btn-success">Learn more...</a>
+        </div>
+      </div>
+    </div>
+  </div>

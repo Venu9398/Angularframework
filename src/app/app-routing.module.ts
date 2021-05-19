@@ -22,7 +22,8 @@ const routes: Routes = [
     {path:"bikes",component:BikesComponent}
   ]
 },
-  {path:"contactus",component:ContactusComponent}
+  {path:"contactus",component:ContactusComponent},
+  {path:'',redirectTo:'/Home',pathMatch:'full'}
 ];
 
 @NgModule({
