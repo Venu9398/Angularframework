@@ -13,6 +13,6 @@ export class RallyComponent implements OnInit{
   constructor(private dsobj:RallyService){
   }
   ngOnInit(){
-    this.rally=this.dsobj.rallyRally();
+    this.rally=this.dsobj.getrallydata();
   }
 }

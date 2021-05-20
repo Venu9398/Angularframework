@@ -6,6 +6,7 @@ import { Products } from '../app/models/product.module'
 })
 export class RallyService {
   rallyRally: any;
+  getrallyRally: any;
 
   constructor() { }
   private rally:Products[]=[
@@ -29,7 +30,7 @@ export class RallyService {
     productImage:"https://blog.ktm.com/wp-content/uploads/2021/02/Image2_resized.jpg"
     }
    ]
-   getrallydata(){
+   getrallydata():Products[]{
      return this.rally;
    }
 }

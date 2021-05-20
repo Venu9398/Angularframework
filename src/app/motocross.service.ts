@@ -4,10 +4,14 @@ import { Products } from '../app/models/product.module'
   providedIn: 'root'
 })
 export class MotocrossService {
+  getridersMotocross: any;
+  ridersMotocross(): Products[] {
+    throw new Error('Method not implemented.');
+  }
   imagesMotocross: any;
 
   constructor() { }
-  private images:Products[]=[
+  private riders:Products[]=[
     
     {
       productTitle:"COOPER WEBB CLINCHES KTM’S FIFTH AMA SUPERCROSS 450SX CHAMPIONSHIP",
@@ -25,7 +29,7 @@ export class MotocrossService {
           productImage:"https://www.ktm.com/content/dam/websites/ktm-com/asia/in/en/news/KTM_250_Adventure_Key%20Visual.component.crop-1x1-4.ts=1607514490920.jpg/content/websites/ktm-com/asia/in/en/ktm-world/news/ktm-lifts-the-covers-off-the-all-new-ktm-250-adventure/jcr:content/root/newsmetadata"
           },
   ]
-  getmotocrossdata(){
-    return this.images;
+  getmotocrossdata():Products[]{
+    return this.riders;
   }
 }

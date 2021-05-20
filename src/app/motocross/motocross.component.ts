@@ -9,12 +9,12 @@ import { Products } from '../models/product.module';
 })
 export class MotocrossComponent implements OnInit{
   
-  imagess:Products[]=[];
+  image:Products[]=[];
   constructor(private dsObj:MotocrossService) {
    }
    //obj initialization logic
    ngOnInit(){
-   this.imagess = this.dsObj.imagesMotocross();
+   this.image = this.dsObj.getmotocrossdata();
 
   }
 }
