@@ -23,18 +23,22 @@
     <tr>
         <th scope="col">Id</th>
         <th scope="col">Name</th>
-        <th scope="col">Year</th>
-        <th scope="col">color</th>
-        <th scope="col">pantone_value</th>
+        <th scope="col">email</th>
+        <th scope="col">ProfilePic</th>
+        <th scope="col">profession</th>
+        <th scope="col">address</th>
+        <th scope="col">mobile number</th>
       </tr>
 </thead>
 <tbody >
-    <tr *ngFor="let pgobj of pages.data">
+    <tr *ngFor="let pgobj of users">
     <td scope="col">{{pgobj.id}} </td>
     <td scope="col">{{pgobj.name}} </td>
-    <td scope="col">{{pgobj.year}} </td>
-    <td scope="col"> {{pgobj.color}}</td>
-    <td scope="col">{{pgobj.pantone_value}} </td>
+    <td scope="col">{{pgobj.email}} </td>
+    <td scope="col"><img src={{pgobj.profilePic}} alt=""></td>
+    <td scope="col">{{pgobj.profession}} </td>
+    <td scope="col">{{pgobj.address.city}} </td>
+    <td scope="col">{{pgobj.mobileno}} </td>
 </tr>
 </tbody>
 </table>

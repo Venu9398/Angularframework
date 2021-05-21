@@ -9,12 +9,12 @@ import { Post } from '../models/post.model';
   styleUrls: ['./test.component.css']
 })
   //inject Fakedata service object
-  export class TestComponent implements OnInit {
+  export class TestComponent implements OnInit , OnDestroy{
 
    mySubscription:Subscription;
   
     myPosts:Post[]=[];
-  pages;
+  users;
     //inject Fakedata service object
     constructor(private fsObj:FakedataService) { }
   
@@ -28,15 +28,18 @@ import { Post } from '../models/post.model';
          console.log("err in getting posts data",err)
         }
         )
-     this.mySubscription = this.fsObj.getpages().subscribe(
+     this.mySubscription = this.fsObj.getusers().subscribe(
        pagesdata => {
-         this.pages=pagesdata;
+         this.users=pagesdata;
+         console.log("this.users")
        },
        err=>{
          console.log("err in getting post",err)
        }
        );
-     
-       
+    }
+
+    ngOnDestroy(){
+      this.mySubscription.unsubscribe
     }
   }

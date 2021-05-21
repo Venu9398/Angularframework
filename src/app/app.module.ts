@@ -17,6 +17,8 @@ import { RallyComponent } from './rally/rally.component';
 import { BikesComponent } from './bikes/bikes.component';
 import { TestComponent } from './test/test.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { UsersComponent } from './users/users.component';
+import { UserdetailsComponent } from './userdetails/userdetails.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     RallyComponent,
     BikesComponent,
     TestComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    UsersComponent,
+    UserdetailsComponent
     
   ],
   imports: [
