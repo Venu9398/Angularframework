@@ -1,0 +1,42 @@
+<div class="container mt-3">
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th scope="col">UserId</th>
+                <th scope="col">Id</th>
+                <th scope="col">Title</th>
+                <th scope="col">Body</th>
+              </tr>
+        </thead>
+        <tbody >
+            <tr *ngFor="let pgobj of myPosts">
+            <td scope="col">{{pgobj.userId}} </td>
+            <td scope="col">{{pgobj.id}} </td>
+            <td scope="col">{{pgobj.title}} </td>
+            <td scope="col"> {{pgobj.body}}</td>
+        </tr>
+        </tbody>
+        </table>
+    <!-- 2nd table -->
+<table class="table table-bordered table-striped">
+<thead>
+    <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Year</th>
+        <th scope="col">color</th>
+        <th scope="col">pantone_value</th>
+      </tr>
+</thead>
+<tbody >
+    <tr *ngFor="let pgobj of pages.data">
+    <td scope="col">{{pgobj.id}} </td>
+    <td scope="col">{{pgobj.name}} </td>
+    <td scope="col">{{pgobj.year}} </td>
+    <td scope="col"> {{pgobj.color}}</td>
+    <td scope="col">{{pgobj.pantone_value}} </td>
+</tr>
+</tbody>
+</table>
+</div>
+

@@ -9,6 +9,7 @@ import { MotogpComponent } from './motogp/motogp.component';
 import { ProductsComponent } from './products/products.component';
 import { RallyComponent } from './rally/rally.component';
 import { RegisterComponent } from './register/register.component';
+import { TestComponent } from './test/test.component';
 
 const routes: Routes = [
   {path:"home",component:HomeComponent },
@@ -22,6 +23,7 @@ const routes: Routes = [
   ]
 },
   {path:"contactus",component:ContactusComponent},
+  {path:"test",component:TestComponent},
   { path:'', redirectTo:'/home',pathMatch:'full'},
 ];
 

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {HttpClientModule} from '@angular/common/http'
 import{FormsModule}  from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +15,8 @@ import { MotogpComponent } from './motogp/motogp.component';
 import { MotocrossComponent } from './motocross/motocross.component';
 import { RallyComponent } from './rally/rally.component';
 import { BikesComponent } from './bikes/bikes.component';
+import { TestComponent } from './test/test.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
@@ -28,13 +31,16 @@ import { BikesComponent } from './bikes/bikes.component';
     MotogpComponent,
     MotocrossComponent,
     RallyComponent,
-    BikesComponent
+    BikesComponent,
+    TestComponent,
+    PagenotfoundComponent
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
