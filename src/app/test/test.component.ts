@@ -13,8 +13,8 @@ import { Post } from '../models/post.model';
 
    mySubscription:Subscription;
   
-    myPosts:Post[]=[];
-  users;
+    myPosts:any[]=[];
+    pages;
     //inject Fakedata service object
     constructor(private fsObj:FakedataService) { }
   
@@ -28,10 +28,11 @@ import { Post } from '../models/post.model';
          console.log("err in getting posts data",err)
         }
         )
+
      this.mySubscription = this.fsObj.getusers().subscribe(
        pagesdata => {
-         this.users=pagesdata;
-         console.log("this.users")
+         this.pages=pagesdata;
+         console.log(pagesdata)
        },
        err=>{
          console.log("err in getting post",err)

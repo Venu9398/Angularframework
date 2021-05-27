@@ -1,7 +1,12 @@
 //create a User model
-export interface User{
-    username:string;
-    dob:string;
-    email:string;
+export interface user{
+  id:number;
+  email:string;
+  name:string;
+  profilePic:string;
+  address:string;
+      city:string;
+  profession:string;
+  mobileno:number;
   
   }

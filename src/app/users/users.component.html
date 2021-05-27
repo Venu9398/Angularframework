@@ -1,1 +1,15 @@
-<p>users works!</p>
+<table class="table container table-bordered table-striped text-center">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">E-mail</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let userobj of Users">
+        <td><button (click)="onSelectId(userobj.id)"> {{userobj.id}} </button></td>
+        <td>{{userobj.email}} </td>
+      </tr>
+    </tbody>
+  </table>
+ 

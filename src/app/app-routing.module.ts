@@ -10,6 +10,8 @@ import { ProductsComponent } from './products/products.component';
 import { RallyComponent } from './rally/rally.component';
 import { RegisterComponent } from './register/register.component';
 import { TestComponent } from './test/test.component';
+import { UserdetailsComponent } from './userdetails/userdetails.component';
+import { UsersComponent } from './users/users.component';
 
 const routes: Routes = [
   {path:"home",component:HomeComponent },
@@ -23,7 +25,10 @@ const routes: Routes = [
   ]
 },
   {path:"contactus",component:ContactusComponent},
-  {path:"test",component:TestComponent},
+  {path:"test",component:TestComponent,children:[
+    {path:"users",component:UsersComponent}
+  ]},
+  {path:"users/:id",component:UserdetailsComponent},
   { path:'', redirectTo:'/home',pathMatch:'full'},
 ];
 

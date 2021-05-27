@@ -10,10 +10,10 @@ export class FakedataService {
   constructor(private hc:HttpClient) { }
  
   getPosts():Observable<Post[]>{
-    return this.hc.get<Post[]>('https://jsonplaceholder.typicode.com/posts')
+    return this.hc.get<Post[]>('https://jsonplaceholder.typicode.com/users')
   }
 
   getusers():Observable<any[]>{
-     return this.hc.get<any[]>('http://localhost:3000/users')
+     return this.hc.get<any[]>('https://reqres.in/api/unknown')
   }
 }

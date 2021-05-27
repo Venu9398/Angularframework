@@ -1,46 +1,61 @@
-<div class="container mt-3">
-    <table class="table table-bordered table-striped">
+<!-- <div class="container mt-5 mb-5 text-center">
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" routerLink="users" routerLinkActive="active">Users</a>
+        </li>
+      </ul>
+      <router-outlet></router-outlet> -->
+     <table class="table table-bordered table-striped">
         <thead>
             <tr>
-                <th scope="col">UserId</th>
                 <th scope="col">Id</th>
-                <th scope="col">Title</th>
-                <th scope="col">Body</th>
+                <th scope="col">Name</th>
+                <th scope="col">Username</th>
+                <th scope="col">Email</th>
+                <th scope="col">Address</th>
+                <th scope="col">Website</th>
+                <th scope="col">Phone</th>
+                <th scope="col">Company Name</th>
+                <th scope="col">Company bs</th>
               </tr>
         </thead>
         <tbody >
             <tr *ngFor="let pgobj of myPosts">
-            <td scope="col">{{pgobj.userId}} </td>
             <td scope="col">{{pgobj.id}} </td>
-            <td scope="col">{{pgobj.title}} </td>
-            <td scope="col"> {{pgobj.body}}</td>
+            <td scope="col">{{pgobj.name}} </td>
+            <td scope="col">{{pgobj.username}} </td>
+            <td scope="col"> {{pgobj.email}}</td>
+            <td scope="col"> {{pgobj.address.city}}</td>
+            <td scope="col"> {{pgobj.website}}</td>
+            <td scope="col"> {{pgobj.phone}}</td>
+            <td scope="col"> {{pgobj.company.name}}</td>
+            <td scope="col"> {{pgobj.company.bs}}</td>
         </tr>
         </tbody>
         </table>
-    <!-- 2nd table -->
-<table class="table table-bordered table-striped">
+     <!-- 2nd table  -->
+<table class="table table-bordered table-striped mt-5">
 <thead>
     <tr>
         <th scope="col">Id</th>
         <th scope="col">Name</th>
-        <th scope="col">email</th>
-        <th scope="col">ProfilePic</th>
-        <th scope="col">profession</th>
-        <th scope="col">address</th>
-        <th scope="col">mobile number</th>
+        <th scope="col">Year</th>
+        <th scope="col">color</th>
+        <th scope="col">pantone_value</th>
       </tr>
+
 </thead>
 <tbody >
-    <tr *ngFor="let pgobj of users">
-    <td scope="col">{{pgobj.id}} </td>
-    <td scope="col">{{pgobj.name}} </td>
-    <td scope="col">{{pgobj.email}} </td>
-    <td scope="col"><img src={{pgobj.profilePic}} alt=""></td>
-    <td scope="col">{{pgobj.profession}} </td>
-    <td scope="col">{{pgobj.address.city}} </td>
-    <td scope="col">{{pgobj.mobileno}} </td>
+    <tr *ngFor="let pgobj of pages.data">
+        <td scope="col">{{pgobj.id}} </td>
+        <td scope="col">{{pgobj.name}} </td>
+        <td scope="col">{{pgobj.year}} </td>
+        <td scope="col"> {{pgobj.color}}</td>
+        <td scope="col">{{pgobj.pantone_value}} </td>
+    
 </tr>
 </tbody>
 </table>
-</div>
+
+
 
