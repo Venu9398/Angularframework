@@ -19,6 +19,8 @@ import { TestComponent } from './test/test.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { UsersComponent } from './users/users.component';
 import { UserdetailsComponent } from './userdetails/userdetails.component';
+import { ViewproductsComponent } from './viewproducts/viewproducts.component';
+import { AddproductsComponent } from './addproducts/addproducts.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { UserdetailsComponent } from './userdetails/userdetails.component';
     TestComponent,
     PagenotfoundComponent,
     UsersComponent,
-    UserdetailsComponent
+    UserdetailsComponent,
+    ViewproductsComponent,
+    AddproductsComponent
     
   ],
   imports: [

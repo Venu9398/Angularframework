@@ -1,13 +1,15 @@
-<div class="row row-cols-1  row-cols-lg-3 mt-5 mb-5 m-5">
-   <div class="col" *ngFor="let bikesobj of bikes">
-   <img src={{bikesobj.productImage}} class="card-img-top  " height="300px" alt="...">
-   <div class="card-body">
-     <h5 class="card-title" style="color: #173e9c;">{{bikesobj.productTitle}}</h5>
-     <p class="card-text">{{bikesobj.description}}</p>
-     <button href="#" class="btn add-product btn-success" (click)="sendProductDetailsToParent(bikesobj.productTitle)">Add product</button>
-   </div>
-</div>
- </div>
+<ul class="nav nav-tabs justify-content-center">
+   <li class="nav-item">
+      <a class="nav-link" routerLink="viewproducts" routerLinkActive="active">Viewproducts</a>
+    </li>
+   <li class="nav-item">
+      <a class="nav-link" routerLink="addproducts" routerLinkActive="active">Addproducts</a>
+    </li>
+   
+ </ul>
+
+<router-outlet> </router-outlet>
+
 <!-- <h1 class="text-center display-5 p-5 title "><b>Racing motorbikes</b> </h1> 
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mb-5 ">
      <div class="col"*ngFor="let mobj of products">

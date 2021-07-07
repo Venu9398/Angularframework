@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AddproductsComponent } from './addproducts/addproducts.component';
 import { BikesComponent } from './bikes/bikes.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { HomeComponent } from './home/home.component';
@@ -12,6 +13,7 @@ import { RegisterComponent } from './register/register.component';
 import { TestComponent } from './test/test.component';
 import { UserdetailsComponent } from './userdetails/userdetails.component';
 import { UsersComponent } from './users/users.component';
+import { ViewproductsComponent } from './viewproducts/viewproducts.component';
 
 const routes: Routes = [
   {path:"home",component:HomeComponent },
@@ -21,7 +23,11 @@ const routes: Routes = [
     {path:"MotoGp",component:MotogpComponent},
     {path:"Motocross Supercross",component:MotocrossComponent},
     {path:"Rally",component:RallyComponent},
-    {path:"bikes",component:BikesComponent}
+    {path:"bikes",component:BikesComponent,children:[
+      {path:"viewproducts",component:ViewproductsComponent},
+      {path:"addproducts",component:AddproductsComponent},
+      {path:'',redirectTo:"/Products/bikes/viewproducts",pathMatch:"full"}
+    ]}
   ]
 },
   {path:"contactus",component:ContactusComponent},
@@ -30,6 +36,7 @@ const routes: Routes = [
   ]},
   {path:"users/:id",component:UserdetailsComponent},
   { path:'', redirectTo:'/home',pathMatch:'full'},
+  { path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule) },
 ];
 
 @NgModule({

@@ -1,19 +1,45 @@
-<div class="container mb-5">
-<h1 class=" text-center mt-3"><b>Login</b></h1>
-<form class="col-lg-6 mx-auto mt-5">
-    <div class="mb-3">
-      <label for="exampleInputEmail1" class="form-label ">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+<h2 class="text-center text-white mt-5">Login form</h2>
+
+<div class="row">
+    <div class="col-sm-2 col-md-3"></div>
+    <div class="col-sm-8 col-md-6">
+        <form class="text-dark" #ref="ngForm"  (ngSubmit)="onLogin(ref)">
+            <div class="mb-3">
+                <label for="un" class="form-label">Username</label>
+                <input type="text" class="form-control" id="un" name="username" ngModel>
+            </div>
+            <div class="mb-3">
+                <label for="pw" class="form-label">Password</label>
+                <input type="password" class="form-control" id="pw"  name="password" ngModel>
+            </div>
+        
+           
+        
+            <button type="submit" class="btn btn-success d-block mx-auto m-4">Login</button>
+        </form>
     </div>
-    <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label ">Password</label>
-      <input type="password" class="form-control" id="exampleInputPassword1">
-    </div>
-    <div class="mb-3 form-check">
-      <input type="checkbox" class="form-check-input " id="exampleCheck1">
-      <label class="form-check-label " for="exampleCheck1  ">Check me out</label>
-    </div>
-    <button type="submit" class="btn btn-success mb-5">Submit</button>
-  </form>
+    <div class="col-sm-2 col-md-3"></div>
 </div>
+
+<!--  
+<div class="container mb-5">
+  <h1 class=" text-center mt-3"><b>Login</b></h1>
+  <form class="col-lg-6 mx-auto mt-5" #ref="ngForm" (ngSubmit)="onLogin(ref)">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label ">Username or Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" ngModel>
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label ">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" ngModel>
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input " id="exampleCheck1">
+        <label class="form-check-label " for="exampleCheck1  ">Check me out</label>
+      </div>
+      <button type="submit" class="btn btn-success mb-5">Submit</button>
+    </form>
+  </div>
+
+*/-->

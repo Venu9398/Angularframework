@@ -1,0 +1,10 @@
+<div class="row row-cols-1  row-cols-lg-3 mt-5 mb-5 m-5">
+    <div class="col" *ngFor="let bikesobj of bikes">
+    <img src={{bikesobj.productImage}} class="card-img-top  " height="300px" alt="...">
+    <div class="card-body">
+      <h5 class="card-title" style="color: #173e9c;">{{bikesobj.productTitle}}</h5>
+      <p class="card-text">{{bikesobj.description}}</p>
+      <button href="#" class="btn add-product btn-success" (click)="sendProductDetailsToParent(bikesobj.productTitle)">Add product</button>
+    </div>
+ </div>
+  </div>

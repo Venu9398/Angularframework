@@ -1,0 +1,17 @@
+<form class="mb-5 mt-5 m-5" (ngSumbit)="onSubmit()">
+  <div class="form-floating mb-3">
+    <input type="text" class="form-control" id="floatingInput" placeholder="text" name="ProductTitle" [(ngModel)]="bikemodel.productTitle">
+    <label for="floatingInput">Product name</label>
+  </div>
+    <div class="form-floating mb-3">
+    <input type="text" class="form-control" id="floatingPassword" placeholder="Password" name="Productimage" [(ngModel)]="bikemodel.productImage">
+    <label for="floatingPassword">Image url</label>
+  </div>
+    <div class="form-floating mb-3">
+    <input type="text" class="form-control" id="floatingPassword2" placeholder="Password" name="description" [(ngModel)]="bikemodel.description">
+    <label for="floatingPassword2">Description</label>
+  </div>
+  <div class="col-12 mt-4 text-center">
+    <button class="btn btn-primary btn-center" type="submit" >Submit</button>
+  </div>
+</form>
